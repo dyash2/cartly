@@ -1,0 +1,21 @@
+{
+  "name": "cartly-backend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^17.2.3",
+    "express": "^4.22.1",
+    "http-errors": "~1.6.3",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.1.1",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.11"
+  }
+}
