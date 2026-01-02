@@ -1,6 +1,7 @@
-import dotenv from 'dotenv';
+import {config} from 'dotenv';
 
-dotenv.config();
+config({
+    path: `.env.${process.env.NODE_ENV || 'development'}.local`
+});
 
-export const PORT = process.env.PORT || 5500;
-export const MONGODB_URI = process.env.MONGODB_URI;
+export const {PORT, NODE_ENV, DB_URI} = process.env;
